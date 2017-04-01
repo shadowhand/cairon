@@ -1,10 +1,20 @@
-# cairon
+cairon
+======
+
+[![Become a Supporter](https://img.shields.io/badge/patreon-sponsor%20me-e6461a.svg)](https://www.patreon.com/shadowhand)
+[![Latest Stable Version](https://img.shields.io/packagist/v/cairon/cairon.svg)](https://packagist.org/packages/shadowhand/cairon)
+[![License](https://img.shields.io/packagist/l/shadowhand/cairon.svg)](https://github.com/shadowhand/cairon/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/shadowhand/cairon.svg)](https://travis-ci.org/shadowhand/cairon)
+[![Code Coverage](https://scrutinizer-ci.com/g/shadowhand/cairon/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/shadowhand/cairon/?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/shadowhand/cairon/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/shadowhand/cairon/?branch=master)
 
 A tiny wrapper around an [auryn][auryn] that provides configuration capabilities.
-
-> Like auryn, cairon should never be used as a Service Locator!
+Attempts to be [PSR-1][psr-1], [PSR-2][psr-2], and [PSR-4][psr-4] compliant.
 
 [auryn]: https://github.com/elazar/auryn-configuration
+[psr-1]: http://www.php-fig.org/psr/psr-1/
+[psr-2]: http://www.php-fig.org/psr/psr-2/
+[psr-4]: http://www.php-fig.org/psr/psr-4/
 
 ## Usage
 
@@ -86,7 +96,7 @@ $config = InjectorConfig::make($injector);
 assert($injector === $config->injector());
 ```
 
-# Inspiration
+## Inspiration
 
 The theory behind cairon comes from [elazar/auryn-configuration][auryn-configuration].
 This same theory was also adopted by [equip/config][equip-config]. My goal was to
@@ -96,6 +106,6 @@ implementing a concrete interface.
 [auryn-configuration]: https://github.com/elazar/auryn-configuration
 [equip-config]: https://github.com/equip/config
 
-# License
+## License
 
 MIT.
